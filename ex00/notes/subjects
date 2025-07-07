@@ -1,0 +1,12 @@
+CPP 07/ex00
+
+	Functions templates
+		swap 
+		min
+		max
+
+	these functions can call any type of argument
+		the two argumetns must be the same type
+		must support all the comparsion operators
+
+		templates must be defined in the header files

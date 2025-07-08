@@ -6,12 +6,12 @@ PURPLE = \033[0;35m
 CYAN = \033[0;36m
 NORMAL = \033[0m
 
-NAME = template 
+NAME = array 
 CPP = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98 -g3
 
 INC_DIR = ./inc
-HEADERS = $(INC_DIR)/whatever.hpp
+HEADERS = $(INC_DIR)/Array.hpp
 			
 SRC_DIR = ./src
 SRCS = $(SRC_DIR)/main.cpp

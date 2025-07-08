@@ -1,0 +1,27 @@
+CPP 07/ex01
+
+
+	Develop a Class template Array(as opposed to a Function template)
+	
+	The template class is called Array
+		it contians elements of type T
+		Ctor w/ no params
+			creates an empty array
+		Ctor w/ unsigned int n as param
+			the n is used to create an array of n size
+			Tip: Try to compile int* a = new int(); then display *a
+
+	There has to a copy ctor and copy assignment operator
+		modifying iether the original array or its copy after copying musn't affect the other array
+	
+	
+	You MUST use the new[] operator to allocate memory
+		do the dtor has to use delete[] (i'm assuming)
+
+	Elements can be accessed through the substript operator []
+
+	if an out of bound index is tried in the [] operator, then a std::exception is thrown
+
+	there must be a size() method that returns the number of elements in the array( so basical a getter for n and probably const) 
+
+

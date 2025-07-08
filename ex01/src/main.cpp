@@ -2,49 +2,28 @@
 #include <string>
 #include "whatever.hpp"
 
-
-template <typename Type>
-Type	min(Type a, Type b)
+void	outputIntValue(int& x)
 {
-	return (a < b) ? a : b;
+	std::cout << x << std::endl;
 }
 
-template <typename Type>
-Type	max(Type a, Type b)
+void	outputFloatValue(float& x)
 {
-	Type result;
-
-	result = (a > b) ? a : b;
-	return result;
+	std::cout << x << std::endl;
 }
 
-template <typename Type>
-void	swap(Type &a, Type &b)
+void	outputStringValue(std::string& x)
 {
-	Type tmp;
-
-	tmp = a;
-	a = b;
-	b = tmp;
+	std::cout << x << std::endl;
 }
-
 
 int main(void)
 {
-	int	a = 2;	
-	int	b = 3;	
-
-	::swap(a, b);
-	std::cout << "a = " << a << ", b = " << b << std::endl;
-	std::cout << "min( a, b) = " << ::min(a,b) << std::endl;
-	std::cout << "max( a, b) = " << ::max(a,b) << std::endl;
-
-	std::string	c = "chaine1";	
-	std::string	d = "chaine2";	
-
-	::swap(c, d);
-	std::cout << "c = " << c << ", d = " << d << std::endl;
-	std::cout << "min( c, d) = " << ::min(c,d) << std::endl;
-	std::cout << "max( c, d) = " << ::max(c,d) << std::endl;
+	int nums1[] = {1, 2, 3, 4};
+	float nums2[] = {11.1, 22.2, 33.3, 44.4};
+	std::string strs1[] =  {"abc", "def", "ghi", "jkl"};
+	iter(nums1, 4, outputIntValue);
+	iter(nums2, 4, outputFloatValue);
+	iter(strs1, 4, outputStringValue);
 	return 0;
 }

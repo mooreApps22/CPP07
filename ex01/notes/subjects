@@ -1,3 +1,11 @@
 CPP 07/ex01
+	
+	this time the function template iter takes 3 params and returns nothing
+
+		param 1 is an array of Type
+		param 2 is an int for length of array
+		param 3 is a func ptr that takes an Type
+		logic is just a for loop which iterates over the array
 
 	
+
